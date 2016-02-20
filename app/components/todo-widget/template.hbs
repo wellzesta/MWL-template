@@ -1,0 +1,16 @@
+{{! app/components/todo-widget/template.hbs }}
+
+{{!-- 
+
+Local vars:
+  todos, injected from todos.hbs
+
+ --}}
+
+<div class="ui segment">
+
+  {{add-todo onAdd=(action 'addTodo')}}
+
+  {{show-todos todos=todos}}
+
+</div>

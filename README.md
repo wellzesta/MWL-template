@@ -17,10 +17,10 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/wellzesta/MWL-components.git`
-* `cd MWL-components`
-* Install server-side (node) components: `npm install`
-* Install client-side components: `bower install`
+* `git clone https://github.com/wellzesta/MWL-template.git`
+* `cd MWL-template`
+* `npm install` installs server-side (node) components
+* `bower install` installs client-side components
 
 ## Running / Development
 
@@ -43,11 +43,20 @@ Make use of the many generators for code. Try `ember help generate` for more det
 
 ### Using
 
-**MWL-components** (this repository) comes pre-baked with 
+This repository comes pre-baked with 
 
-* SASS `npm install --save-dev ember-cli-sass` See [ember-cli-sass](https://www.npmjs.com/package/ember-cli-sass)
-* Semantic-UI `ember install semantic-ui-ember` [semantic-ui-ember](https://www.npmjs.com/package/semantic-ui-ember)
+* default use of pods implemented thru `"usePods": true` in **.ember-cli**. Please use the pod structure!!!!
+	* Ref: [Program with Erik](http://www.programwitherik.com/ember-pods/)
+* sass support
+	* Installed using: `npm install --save-dev ember-cli-sass`. 
+	* Root-level sass is in **app/styles/app.scss**. 
+	* See [ember-cli-sass](https://www.npmjs.com/package/ember-cli-sass) for usage.
+* Semantic-UI CSS/JS framework providding grid and widgets (c.f. boostrap, foundation)
+	*  Installed using: `ember install semantic-ui-ember` 
+	*  See [semantic-ui-ember](https://www.npmjs.com/package/semantic-ui-ember) for usage.
+	*  Goto [http://localhost:4200/semantic/](http://localhost:4200/semantic/) for working examples.  
 * Firebase toolbelt ``
+* Content security policy: "disabled"
 
 #### Semantic-UI
 
@@ -80,5 +89,6 @@ Firebase offers web app hosting and a backend noSQL document store--MongoDB. **M
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+  * 
 
 
