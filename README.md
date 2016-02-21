@@ -3,7 +3,7 @@
 
 ## About
 
-This README outlines the details of collaborating on this Ember application.
+This README outlines the details of collaborating on this Ember application. MWL-template (this repository) provides a scaffold for MWL addons. Contributors can fork this repository, create a development branch and issue a pull request. The wiki for MWL-template documents the structure of the scaffold and instructions on how to collaborate. The MWL-template source code itself contains working examples of code.
 
 ## Prerequisites
 
