@@ -9,7 +9,7 @@ export default Ember.Route.extend({
       { text: "Create Ember app" },
       { text: "Read Ember Igniter" },
       { text: "Master Ember" }
-    ]
+    ];
   }
 
 });
