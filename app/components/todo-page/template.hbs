@@ -1,10 +1,10 @@
 {{! app/components/todo-page/template.hbs }}
 
-<div class="ui yellow tag label">Level 3:todo-page</div>
+<div class="ui yellow tag label">Level 3. todo-page</div>
 <div class="ui segment">
 
-  {{add-todo-widget onAdd=(action 'addTodo')}}
+  {{todo-page/add-todo-widget onAdd=(action 'addTodo')}}
 
-  {{show-todos-widget todos=todos}}
+  {{todo-page/show-todos-widget todos=todos}}
 
 </div>
