@@ -12,9 +12,15 @@
   dev (shim) has injected the model object (hash) into this component. The hash contains only one attribute, text. We access the value thus:
   </p>
 
-  <p>
-  model.text is: {{model.text}}
-  </p>
+{{#each model as |rental|}}
+  <h2>{{rental.title}}</h2>
+  <p>Owner: {{rental.owner}}</p>
+  <p>Type: {{rental.type}}</p>
+  <p>Location: {{rental.city}}</p>
+  <p>Number of bedrooms: {{rental.bedrooms}}</p>
+{{/each}}
+
+<div class="ui divider"></div>
 
   <p>To add sub-components:</p>
 
