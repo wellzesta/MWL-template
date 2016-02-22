@@ -1,9 +1,10 @@
 import Ember from 'ember';
 
+let myObj = {text: "You rock!" };
+
 export default Ember.Route.extend({
 
-  model() {
-    let myObj = {text: "You rock!" };
+  model: function() {
     return myObj;
   }
 
