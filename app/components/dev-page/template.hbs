@@ -7,24 +7,39 @@
     This is a label attached to the segment. See <a href="http://semantic-ui.com/elements/label.html">[semantic docs]</a>
   </div>
   <h2 class="ui header">Wellzesta contributor, your code goes here</h2>
-
-  <p>
-  dev (shim) has injected the model object (hash) into this component. The hash contains only one attribute, text. We access the value thus:
-  </p>
-
-  <p>
-  model.text is: {{model.text}}
-  </p>
-
-  <p>To add sub-components:</p>
+  
+  You get:
+<ul>
+  <li>The `app/dev` directory, which lets you define the structure of data models, the router, and the shim template that injects your components</li>
+  <li>any components that you care to define. Here, the component dev-page has been defined. All componente go in `/app/components/`</li>
+  <li>We suggest you nest your subcomponents using this ember-cli command:</li>
+</ul>
 
   <pre><code>ember g component dev-page/`sub-component`</code></pre>
 
   <div class="ui compact warning message">
     <i class="alarm icon"></i>
-    sub-component must contain a hyphen.
+    sub-component must contain a hyphen
   </div>
 
+
+  <ul>
+    <li>In `/app/dev/model.js` the data_type `dev` is added to ember-data</li>
+    <li>We used mirage to inject fixture data into `dev`</li>
+    <li>The route `/app/dev/route.js` defines a model() function that returns all instances of `dev` from ember-data</li>
+    <li>The shim template `app/dev/template.hbs` injects the model() function into this component</li>
+    <li>We access the contents of the model thus:</li>
+  </ul>
+  
+  <div class="ui segment">
+   {{#each model as |rental|}}
+    <h2>{{rental.title}}</h2>
+    <p>Owner: {{rental.owner}}</p>
+    <p>Type: {{rental.type}}</p>
+    <p>Location: {{rental.city}}</p>
+    <p>Number of bedrooms: {{rental.bedrooms}}</p>
+  {{/each}}
+  </div>
 
 </div>
 
