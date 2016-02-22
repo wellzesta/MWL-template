@@ -8,6 +8,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('todos');
   this.route('semantic');
+  this.route('home',{ path: '/' });
+  this.route('dev');
 });
 
 export default Router;

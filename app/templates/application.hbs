@@ -7,11 +7,19 @@ Add "ui container" to top-level routes
 
 --}}
 
-<div class="ui red tag label">Level 1: MWL-template</div>
+<div class="ui red tag label">Level 1. MWL-template</div>
 
-<div class="ui container">
-  
-  {{outlet}}
+<div class="ui fixed top four item menu">
+{{!-- a tag makes hover-able --}}
+  <a href="#" id="home" class="item" {{action "menuClickedHandler" 'home'}}>Home</a>
+  <a href="#" id="semantic" class="item" {{action "menuClickedHandler" 'semantic'}}>Demo: Semantic-UI</a>
+  <a href="#" id="todos" class="item" {{action "menuClickedHandler" 'todos'}}>Demo: todos</a>
+  <a href="#" id="dev" class="item" {{action "menuClickedHandler" 'dev'}}>dev</a>
 
 </div>
+
+{{outlet}}
+
+
+{{!-- <div class="ui container"></div> --}}
 

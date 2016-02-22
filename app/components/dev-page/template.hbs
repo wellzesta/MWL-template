@@ -1,0 +1,32 @@
+{{! app/components/dev-page/template.hbs }}
+
+<div class="ui yellow tag label">Level 3. dev-page</div>
+
+<div class="ui segment">
+  <div class="ui top attached label">
+    This is a label attached to the segment. See <a href="http://semantic-ui.com/elements/label.html">[semantic docs]</a>
+  </div>
+  <h2 class="ui header">Wellzesta contributor, your code goes here</h2>
+
+  <p>
+  dev (shim) has injected the model object (hash) into this component. The hash contains only one attribute, text. We access the value thus:
+  </p>
+
+  <p>
+  model.text is: {{model.text}}
+  </p>
+
+  <p>To add sub-components:</p>
+
+  <pre><code>ember g component dev-page/`sub-component`</code></pre>
+
+  <div class="ui compact warning message">
+    <i class="alarm icon"></i>
+    sub-component must contain a hyphen.
+  </div>
+
+
+</div>
+
+
+
