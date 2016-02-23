@@ -1,7 +1,21 @@
 {{! app/components/todo-page/template.hbs }}
 
-<div class="ui yellow tag label">Level 3. todo-page</div>
+<div class="ui yellow tag label">Level 3. [Component] todo-page</div>
 <div class="ui segment">
+
+<h2>About</h2>
+
+<strong>This bare-bones demo shows the most basic usage of models, routers, components, and semantic-ui. You get:</strong>
+
+<div class="ui compact info message">
+<ul>
+  <li>`app/todos/router.js` route serves up hard-coded starter data in model(). There is no use of ember-data. For more advanced use, see the dev page, which defines a data model for ember-data, uses a fixture (mirage) to load data into the model. </li>
+  <li>Use of components. `app/todos/template.hbs` calls the todos-page component, and injects model() (renamed as todos() ) into the component</li>
+  <li>Use of nested components</li>
+  <li>`app/todo-page/add-todo-widget/` uses form validation.</li>
+  <li>`app/todo-page/add-todo-widget/component.js` shows use of jQuery</li>
+</ul>
+</div>
 
   {{todo-page/add-todo-widget onAdd=(action 'addTodo')}}
 
