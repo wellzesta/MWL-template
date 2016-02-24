@@ -3,7 +3,7 @@
 
 ## About
 
-This README outlines the details of collaborating on this Ember application. MWL-template (this repository) provides a scaffold for MWL addons. Contributors can fork this repository, create a development branch and issue a pull request. The wiki for MWL-template documents the structure of the scaffold and instructions on how to collaborate. The MWL-template source code itself contains working examples of code.
+This README outlines the details of collaborating on this Ember application. MWL-template (this repository) provides a scaffold for MWL addons. Contributors can fork this repository, create a development branch and issue a pull request. **The wiki for MWL-template documents the structure of the scaffold and instructions on how to collaborate.** The MWL-template source code itself contains working examples of code.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your app at [[http://localhost:4200]].
 
 ### Code Generators
 
@@ -55,31 +55,11 @@ This repository comes pre-baked with
 	*  Installed using: `ember install semantic-ui-ember` 
 	*  See [semantic-ui-ember](https://www.npmjs.com/package/semantic-ui-ember) for usage.
 	*  Goto [http://localhost:4200/semantic/](http://localhost:4200/semantic/) for working examples.  
-* Firebase toolbelt ``
 * Content security policy: "disabled"
 
 #### Semantic-UI
 
 MyWellzestaLife uses the [Semantic-UI](http://semantic-ui.com/) framework that provides responsive view and a rich widget toolset. And the default theme looks great!
-
-#### Firebase
-
-Firebase offers web app hosting and a backend noSQL document store--MongoDB. **MWL-components** is pre-configured with all the tools needed to connect to firebase. Do the following:
-
-* Establish a [firebase account](https://www.firebase.com/). Suggestion: Choose "sign up with google".
-* In your firebase dashboard create a "new app". Copy the `<app-name>`
-* in **config/environment.js** edit the line
-
-> firebase: 'https://`<app-name>`.firebaseIO.com',
-
-* in **firebase.json** edit the line
-
->   "firebase": "`<app-name>`",
-
-### Deploy
-
-* `firebase deploy`
-* TODO: May need to set global firebase login credentials
 
 
 ## Further Reading / Useful Links

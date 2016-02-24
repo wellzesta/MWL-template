@@ -1,7 +1,7 @@
 {
   "name": "mwl-template",
   "version": "0.0.0",
-  "description": "Small description for mwl-template goes here",
+  "description": "MWL-template is meant to be forked and customized by developers that wish to contribute content to MyWellzestaLife",
   "private": true,
   "directories": {
     "doc": "doc",
