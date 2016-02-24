@@ -57,18 +57,14 @@ This repository comes pre-baked with
 	*  Goto [http://localhost:4200/semantic/](http://localhost:4200/semantic/) for working examples.  
 * Content security policy: "disabled"
 
-#### Semantic-UI
-
-MyWellzestaLife uses the [Semantic-UI](http://semantic-ui.com/) framework that provides responsive view and a rich widget toolset. And the default theme looks great!
-
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
+* [Semantic-UI](http://semantic-ui.com/). The framework provides responsive view and a rich widget toolset. The default theme looks great!
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-  * 
+
 
 
