@@ -22,6 +22,8 @@ You will need the following things properly installed on your computer.
 * `npm install` installs server-side (node) components
 * `bower install` installs client-side components
 
+![Screenshot](https://cldup.com/G64xr76oP7.png)
+
 ## Running / Development
 
 * `ember server`
